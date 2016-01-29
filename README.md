@@ -16,3 +16,4 @@ next open index.html in the /build folder to see the result.
 * Appropiate ending screen when user made no mistakes
 * Fix some typos
 * Better naming for certain vars/functions
+* Uglify javascript for production
