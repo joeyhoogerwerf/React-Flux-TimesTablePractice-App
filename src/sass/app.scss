@@ -1,0 +1,199 @@
+$borderColor: #cdcdcd;
+
+@mixin breakpoint($point){
+	@if $point == max-tablet-portrait{
+		@media (max-width: 768px){@content;}
+	}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+
+html, body, #content, .app, .times-table-exam-container{
+	@include breakpoint(max-tablet-portrait){
+		height: 100%;
+	}
+}
+
+body{
+	padding: 20px 0;
+	@include breakpoint(max-tablet-portrait){
+		padding: 0;
+	}
+	font-family: 'calibri';
+	color: #444;
+}
+
+#content{
+	width: 600px;
+	@include breakpoint(max-tablet-portrait){
+		width: 100%;
+	}
+	margin: 0 auto;
+	border: 1px solid $borderColor;
+	@include breakpoint(max-tablet-portrait){
+		border: none;
+	}
+
+	.app{
+		.times-tables-selection-container{
+			text-align: center;
+
+			p{
+				margin: 0;
+				border-bottom: 1px solid $borderColor;
+
+				&:hover{
+					cursor: pointer;
+				}
+				&:last-child{
+					border-bottom: 0; 
+				}
+
+				label{
+					width: 100%;
+					padding: 30px 0 35px 0;
+					font-size: 20px;
+					display: block;
+
+					input[type='checkbox'] {
+					    width: 25px;
+					    height: 25px;
+					    position: relative;
+					    top: 5px;
+					    left: 10px;
+					}	
+				}
+			}	
+		}
+
+		.times-table-exam-container{
+			margin: 0 auto;
+			text-align: center;
+			overflow: hidden;
+
+			.times-table-question-container{
+				@include breakpoint(max-tablet-portrait){
+					height: 10%;
+					margin: 0 auto;
+					display: table;
+				}
+
+				h2{
+					margin: 30px 0 20px 0;
+					@include breakpoint(max-tablet-portrait){
+						margin: 0;
+						vertical-align: middle;
+						display: table-cell;
+					}
+				}
+
+				.times-table-question{
+					padding-left: 8px;
+					font-size: 22px;
+				}
+			}
+
+			.numpad-container{
+				@include breakpoint(max-tablet-portrait){
+					height: 90%;
+				}
+
+				.given-awnswer{
+					margin: 20px 0 37px 0;
+					@include breakpoint(max-tablet-portrait){
+						height: 10%;
+						margin: 0;
+					}
+					font-size: 24px;
+					font-weight: 900;
+				}
+
+				.numpad-keys-container{
+					@include breakpoint(max-tablet-portrait){
+						height: 90%;
+					}
+					border-top: 1px solid $borderColor;
+
+					button{
+						width: 33.33333%;
+						height: 100px;
+						@include breakpoint(max-tablet-portrait){
+							height: 25%;
+							&:nth-child(n + 10){
+								height: 26%;
+							}
+						}
+						border: none;
+						background: linear-gradient(#fff, #eee);
+						font-size: 20px;
+						color: #444;
+						cursor: pointer;
+						&:focus{
+							outline: none;
+						}
+						&:nth-child(3n + 1){
+							border-right: 1px solid #dedede;
+						}
+						&:nth-child(3n){
+							border-left: 1px solid #dedede;
+						}
+						&:nth-child(10){
+							background: linear-gradient(#FF8787, #FF4A4A);
+						}
+						&:nth-child(12){
+							background: linear-gradient(#87FF89, #53FC56);
+						}
+					}
+				}
+			}
+		}
+
+		.times-table-exam-results-container{
+			text-align: center;
+
+			h2{
+				padding: 25px 0 15px 0;
+			}
+
+			p{
+				font-size: 17px;
+			}
+
+			.faulty-questions{
+				margin-top: 31px;
+
+				li{
+					padding: 30px 0 35px 0;
+					border-top: 1px solid $borderColor;
+					font-size: 20px;
+					list-style-type: none;
+				}
+			}
+		}
+
+		.grey-btn{
+			width: 100%;
+			height: 120px;
+			border: none;
+			background: linear-gradient(#fff, #eee);
+			color: #444;
+			font-size: 29px;
+			cursor: pointer;
+		}
+	}
+}
+
+.blink-animation{
+	-webkit-animation: blinkAnimation 1s infinite;
+}
+
+@-webkit-keyframes blinkAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}

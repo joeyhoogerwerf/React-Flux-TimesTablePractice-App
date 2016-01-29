@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease-in-out; }
+
+@media (max-width: 768px) {
+  html, body, #content, .app, .times-table-exam-container {
+    height: 100%; } }
+
+body {
+  padding: 20px 0;
+  font-family: 'calibri';
+  color: #444; }
+  @media (max-width: 768px) {
+    body {
+      padding: 0; } }
+
+#content {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #cdcdcd; }
+  @media (max-width: 768px) {
+    #content {
+      width: 100%; } }
+  @media (max-width: 768px) {
+    #content {
+      border: none; } }
+  #content .app .times-tables-selection-container {
+    text-align: center; }
+    #content .app .times-tables-selection-container p {
+      margin: 0;
+      border-bottom: 1px solid #cdcdcd; }
+      #content .app .times-tables-selection-container p:hover {
+        cursor: pointer; }
+      #content .app .times-tables-selection-container p:last-child {
+        border-bottom: 0; }
+      #content .app .times-tables-selection-container p label {
+        width: 100%;
+        padding: 30px 0 35px 0;
+        font-size: 20px;
+        display: block; }
+        #content .app .times-tables-selection-container p label input[type='checkbox'] {
+          width: 25px;
+          height: 25px;
+          position: relative;
+          top: 5px;
+          left: 10px; }
+  #content .app .times-table-exam-container {
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden; }
+    @media (max-width: 768px) {
+      #content .app .times-table-exam-container .times-table-question-container {
+        height: 10%;
+        margin: 0 auto;
+        display: table; } }
+    #content .app .times-table-exam-container .times-table-question-container h2 {
+      margin: 30px 0 20px 0; }
+      @media (max-width: 768px) {
+        #content .app .times-table-exam-container .times-table-question-container h2 {
+          margin: 0;
+          vertical-align: middle;
+          display: table-cell; } }
+    #content .app .times-table-exam-container .times-table-question-container .times-table-question {
+      padding-left: 8px;
+      font-size: 22px; }
+    @media (max-width: 768px) {
+      #content .app .times-table-exam-container .numpad-container {
+        height: 90%; } }
+    #content .app .times-table-exam-container .numpad-container .given-awnswer {
+      margin: 20px 0 37px 0;
+      font-size: 24px;
+      font-weight: 900; }
+      @media (max-width: 768px) {
+        #content .app .times-table-exam-container .numpad-container .given-awnswer {
+          height: 10%;
+          margin: 0; } }
+    #content .app .times-table-exam-container .numpad-container .numpad-keys-container {
+      border-top: 1px solid #cdcdcd; }
+      @media (max-width: 768px) {
+        #content .app .times-table-exam-container .numpad-container .numpad-keys-container {
+          height: 90%; } }
+      #content .app .times-table-exam-container .numpad-container .numpad-keys-container button {
+        width: 33.33333%;
+        height: 100px;
+        border: none;
+        background: linear-gradient(#fff, #eee);
+        font-size: 20px;
+        color: #444;
+        cursor: pointer; }
+        @media (max-width: 768px) {
+          #content .app .times-table-exam-container .numpad-container .numpad-keys-container button {
+            height: 25%; }
+            #content .app .times-table-exam-container .numpad-container .numpad-keys-container button:nth-child(n + 10) {
+              height: 26%; } }
+        #content .app .times-table-exam-container .numpad-container .numpad-keys-container button:focus {
+          outline: none; }
+        #content .app .times-table-exam-container .numpad-container .numpad-keys-container button:nth-child(3n + 1) {
+          border-right: 1px solid #dedede; }
+        #content .app .times-table-exam-container .numpad-container .numpad-keys-container button:nth-child(3n) {
+          border-left: 1px solid #dedede; }
+        #content .app .times-table-exam-container .numpad-container .numpad-keys-container button:nth-child(10) {
+          background: linear-gradient(#FF8787, #FF4A4A); }
+        #content .app .times-table-exam-container .numpad-container .numpad-keys-container button:nth-child(12) {
+          background: linear-gradient(#87FF89, #53FC56); }
+  #content .app .times-table-exam-results-container {
+    text-align: center; }
+    #content .app .times-table-exam-results-container h2 {
+      padding: 25px 0 15px 0; }
+    #content .app .times-table-exam-results-container p {
+      font-size: 17px; }
+    #content .app .times-table-exam-results-container .faulty-questions {
+      margin-top: 31px; }
+      #content .app .times-table-exam-results-container .faulty-questions li {
+        padding: 30px 0 35px 0;
+        border-top: 1px solid #cdcdcd;
+        font-size: 20px;
+        list-style-type: none; }
+  #content .app .grey-btn {
+    width: 100%;
+    height: 120px;
+    border: none;
+    background: linear-gradient(#fff, #eee);
+    color: #444;
+    font-size: 29px;
+    cursor: pointer; }
+
+.blink-animation {
+  -webkit-animation: blinkAnimation 1s infinite; }
+
+@-webkit-keyframes blinkAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

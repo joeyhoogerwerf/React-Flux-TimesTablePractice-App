@@ -1,0 +1,41 @@
+{
+  "name": "react-test-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joey Hoogerwerf",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^4.1.6",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.1.18",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "eslint-plugin-react": "^3.11.2",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-util": "^3.0.7",
+    "history": "^1.16.0",
+    "lodash": "^3.10.1",
+    "path": "^0.12.7",
+    "react-router": "^1.0.2",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.1"
+  },
+  "dependencies": {
+    "flux": "^2.1.1",
+    "gulp-util": "^3.0.7",
+    "jquery": "^2.1.4",
+    "keymirror": "^0.1.1",
+    "microevent": "^1.0.0",
+    "react": "^0.14.3",
+    "react-addons-update": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
