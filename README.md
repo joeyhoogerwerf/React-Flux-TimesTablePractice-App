@@ -11,8 +11,8 @@ next open index.html in the /build folder to see the result.
 
 ## Todo's
 
-*Routing solution to navigate back to home screen
-*Multilingual (it's now set to Dutch)
-*Appropiate ending screen when user made no mistakes
-*Fix some typos
-*Better naming for certain vars/functions
+* Routing solution to navigate back to home screen
+* Multilingual (it's now set to Dutch)
+* Appropiate ending screen when user made no mistakes
+* Fix some typos
+* Better naming for certain vars/functions
